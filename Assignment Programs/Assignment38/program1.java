@@ -1,0 +1,34 @@
+import java.util.*;
+
+class Pattern
+{
+	public void Pattern(String str)
+	{
+		int i = 0, j = 0;
+		char Arr[] = str.toCharArray();
+		for(i = 0;i < Arr.length - 1;i++)
+		{
+			for(j = 0;j < Arr.length;j++)
+			{
+				System.out.print(Arr[j]+"\t");
+			}
+			System.out.println();
+		}
+	}
+	
+}
+
+class program1
+{
+	public static void main(String args[])
+	{
+		String newStr;
+		Scanner sobj = new Scanner(System.in);
+		
+		System.out.println("Enter string");
+		newStr = sobj.nextLine();
+		
+		Pattern pobj = new Pattern();
+		pobj.Pattern(newStr);
+	}
+}
